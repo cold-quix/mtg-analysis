@@ -44,10 +44,9 @@ Despite the above limitations, the output graphs were surprisingly insightful.
 - Green's most common namewords were `wurm`, `wild`, `growth`, `druid`, `hydra`, and surprisingly `spider`. `Elf` and `Elvish` were counted as separate words, but combined they would have been the single most common word. Words like `strength`, `giant`, `troll`, and `bear` were popular as well. Conversely, `scout`, `hero`, and `predator` were rare.
 
 
-### Mascot Characters
+### Misc
 - The Green mana charts reveal interesting details about mascot characters who have been used to sell the game for decades. A character like Garruk Wildspeaker (a big, tough, hairy wildman associated with green mana) is one of the least common namewords despite him appearing on a lot of cards and promotional material over the years.
 
-### Misc
 - I knew that `wurm` was a common green creature type and card nameword, but I was very surprised to see it at the top of the list (or near the top if the `elf`/`elvish` split were fixed). In recent years, the designers have decided that `hydra` sounds cooler, so that has become the standard "big, scary green creature" type.
 
 - `Bola` is one of the least common black/red namewords, but this is not due to any number of spinning rocks connected by strings. The big bad evil dragon Nicol Bolas is associated with black and red mana, and I believe the stopword cleaning interpreted his name improperly (Bolas's Citadel -> `Bola` + `Citadel`).
