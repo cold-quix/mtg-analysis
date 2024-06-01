@@ -55,7 +55,7 @@ Despite the above limitations, the output graphs were surprisingly insightful.
 
 - Several Ravnican guild names (`Simic`, `Izzet`, `Gruul`) are among the least common namewords in their respective colors. This is counterintuitive as Ravnica has become probably the single most reused location in all of MTG fiction.
 
-- Red cards are the only ones where plain word (`fire`/`flame`) is among the most common instead of a fantastical synonym.
+- Red cards are the only ones where plain words (`fire`/`flame`) are among the most common instead of a fantastical synonym.
 
 - I was surprised to see `Barbarian` and `Crimson` among the rarest red namewords, but `Barbarian` may have placed higher if I had included creature types.
 
