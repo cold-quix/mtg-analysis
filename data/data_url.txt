@@ -1,0 +1,2 @@
+The first version of the mtg-analysis project uses data from the AtomicCards JSON file found here: https://mtgjson.com/downloads/all-files/#atomiccards
+The file was originally retrieved in May/June 2024
