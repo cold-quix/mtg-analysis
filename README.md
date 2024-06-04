@@ -1,4 +1,4 @@
-# mtg-analysis
+# MTG Power Words
 A look at Magic: the Gathering cards using machine learning to analyze and predict words used in names, creature types, etc.
 
 ## Context
