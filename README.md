@@ -1,7 +1,6 @@
 # mtg-analysis
 A look at Magic: the Gathering cards using machine learning to analyze and predict words used in names, creature types, etc.
 
-
 ## Context
 Magic: the Gathering is a trading card game where players use land cards (Plains, Island, Swamp, Mountain, Forest) to generate mana in one of five colors (white, blue, black, red, green) to cast spells in those colors. Each color has different mechanical characteristics and is associated with particular types of cards: most Elf cards are green, and almost all Angel cards are white.
 
@@ -23,6 +22,7 @@ I was able to fix the first issue through trial and error, and assistance from m
 The work is all done in main.ipynb, reading data from a JSON file in `/data` to create dataframes and then using pandas and string manipulation to make the data clean. The 100 most common words were isolated, then graphs are generated with matplotlib and saved manually to `/output`.
 
 I had wanted to have a card's color (the mana required to play it) and its color identity (any secondary mana symbols that appear in its text box) to be considered as primary and secondary characteristics, but that was beyond my abilities at the time. Currently the data set uses a very quick and dirty solution: any card with a multicolored identity is copied across all of its colors - not an ideal solution, but it does allow for cards with differently-colored abilities to be counted.
+
 Ex: a card that costs Green mana to play, but can produce Green or White or Blue mana would be counted as a green card, a blue card, and a white card.
 
 The MTGJSON file is not included due to its size (over 100MB, most of which was non-English card information), but can be found [here](https://mtgjson.com/downloads/all-files/) in the AtomicCards link.
@@ -64,7 +64,7 @@ Despite the above limitations, the output graphs were surprisingly insightful.
 - `Guildmage` was one of red's more common rare words, which is odd because `guildmage` cards are very specifically named and evenly distributed across every color. Thus there must be other names competing for space at the bottom in other colors.
 
 
-## Conclusions and Future Versions
+## Conclusions
 On a basic level, a pass of NLP should be applied to combine synonyms like `elf` and `elvish`. However, an MTG card is not just its name and characteristics, but also its art and setting. Cards like Shock (a simple red card that deals damage) have been reprinted with various new illustrations over the years, depicting many characters across many worlds. Therefore, even though a card may not contain the name Garruk Wildspeaker, it could certainly depict him in the art or mention him in the flavor text.
 
 In order to get a better notion of how colors have been associated with certain themes (especially characters/lore that is original to MTG), it would be necessary to analyze the names and colors of each card, the characters depicted in the art, and have real time data for a card's first printing.
@@ -72,3 +72,13 @@ In order to get a better notion of how colors have been associated with certain 
 But why? Frankly, MTG has produced vanishingly little original worldbuilding or storytelling in recent years, and there have been a lot of "return to former world" sets to make it easier to keep up with the absurd number of products and cards printed. This is the type of thing that is obvious to anyone who has played the game before about 2018-2019, but is hard to quantify.
 
 The game's sensibilities have also changed in no small ways: while a big dude like Garruk Wildspeaker and his hordes of wild animal friends were considered a cool way to sell the game to young boys in the 2000s, modern tastes consider such demographics unpalatable and the mascots have changed accordingly.
+
+### Future Versions
+- Refactor code to use a temporal, set-by-set analysis rather than individual cards. Track namewords in card names, creature type, and flavor text over time. Ignore "joke" sets or specific supplemental products that were only sold in foreign markets.
+- Account for a card's primary and secondary colors properly.
+- Create some way to analyze the color identity of an input word.
+- Use art tags on [Scryfall](https://tagger.scryfall.com/) to identify the prevalance of characters from one set to another.
+- Unify noun/adjective forms of namewords (`elf`/`elvish`) and combine close synonyms (`dark`/`darkness`).
+- Prevent character names from being cleaned into namewords (`Bolas's Citadel` is not `Bola` + `Bitadel`).
+- Graph popularity of certain namewords/creature types/characters over time.
+- Create higher quality graphics and visualizations overall.
