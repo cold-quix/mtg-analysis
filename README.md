@@ -33,11 +33,11 @@ Ultimately I chose a simple word count approach, cleaning only stopwords and pun
 Despite the above limitations, the output graphs were surprisingly insightful.
 
 ### The Basics
-- White's most common words included typical holy things (`angel`, `guardian`, `light`, `spirit`, `soul`, `sun`) and defenders of holy things (`knight`, `paladin`, `hero`, `champion`, `guard`, `master`) with almost zero outliers. Funnily, `angel` is the single most common word, but if it were combined with `angelic` it would crush all other white namewords. The uncommon words are mostly variants that just aren't used as much (`cathar`, `enforcer`, `patrol`) and more common words (`law`, `ancient`, `scout`, `commander`).
+- White's most common words included typical holy things (`angel`, `guardian`, `light`, `spirit`, `soul`, `sun`) and defenders of holy things (`knight`, `paladin`, `hero`, `champion`, `guard`, `master`) with almost zero outliers. Funnily, `angel` is the single most common word, but if it were combined with `angelic` it would crush all other white namewords. The uncommon words are mostly variants that just aren't used as much (`cathar`, `enforcer`, `patrol`) and more plain words (`law`, `ancient`, `scout`, `commander`).
 
 - Blue's most common words are reptilian creatures (`drake`, `merfolk`, `dragon`, `serpent`), weather (`wind`, `storm`, `sea`, `mist`), and traditional wizards (`master`, `mage`, `mystic`, `sage`, `scholar`). However, plain words like `water`, `doctor`, `cloud`, `sorcerer`, and `herald` were rare.
 
-- Black's most common namewords were evil-sounding things (`death`, `blood`, `dead`, `soul`, `hadow`, `vampire`, `witch`, `zombie`). However, the least common namewords contained mostly synonyms (`ghost`, `thief`, `evil`). Amusingly, `dark` was very common, whereas `darkness` was very rare.
+- Black's most common namewords were evil-sounding things (`death`, `blood`, `dead`, `soul`, `shadow`, `vampire`, `witch`, `zombie`). However, the least common namewords contained mostly synonyms (`ghost`, `thief`, `evil`). Amusingly, `dark` was very common, whereas `darkness` was very rare.
 
 - Red's most common words were dominated by ugly creatures (`goblin`, `dragon`, `hellkite`, `giant`, `elemental`, `ogre`), and various synonyms (`fury`, `rage`, `chaos`, `reckless`, `blood`, `lightning`, `flame`, `fire`). Red's least common namewords were orderly things (`disciple`, `veteran`, `rider`, `apprentice`) and plain words (`burn`, `wolf`, `fall`, `earth`, `crimson`).
 
