@@ -49,7 +49,7 @@ Despite the above limitations, the output graphs were surprisingly insightful.
 
 - I knew that `wurm` was a common green creature type and card nameword, but I was very surprised to see it at the top of the list (or near the top if the `elf`/`elvish` split were fixed). In recent years, the designers have decided that `hydra` sounds cooler, so that has become the standard "big, scary green creature" type.
 
-- `Bola` is one of the least common black/red namewords, but this is not due to any number of spinning rocks connected by strings. The big bad evil dragon Nicol Bolas is associated with black and red mana, and I believe the stopword cleaning interpreted his name improperly (Bolas's Citadel -> `Bola` + `Citadel`).
+- `Bola` is one of the least common black/red namewords, but this is not due to any number of spinning rocks connected by strings. The big evil dragon Nicol Bolas is associated with black and red mana, and I believe the stopword cleaning interpreted his name improperly (Bolas's Citadel -> `Bola` + `Citadel`).
 
 - The `Sliver` creature type is among the most common in red, blue, and white, despite Slivers being present in all five colors (as a hive mind of creatures each strengthening one another). This indicates there are more multicolored Slivers that are partially red/blue/white than in other colors.
 
