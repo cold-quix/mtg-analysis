@@ -11,7 +11,7 @@ Over its history, MTG has depicted many different worlds with unique creatures a
 I wanted every MTG card with its name, flavor text, color identity, card type, and creature type (if the card was a creature). Fortunately MTG players are obsessive by nature, and websites like the [MTGJSON](https://mtgjson.com) project have exhaustively catalogued every card and all its printings; there were also datasets available on Kaggle, though these were out of date so I didn't use them.
 
 However, there were some problems:
-1. The structure of the MTGJSON data file contained metadata and card data as the two highest fields, meanining the default parsing with pandas resulted in a dataframe with two columns, one of which contained a thirty-thousand-card-long JSON string.
+1. The structure of the MTGJSON data file contained metadata and card data as the two highest fields, meanining the default parsing with pandas resulted in a dataframe with two columns, one of which contained a thirty-thousand-card-long JSON string. This was cumbersome to work with.
 2. The MTGJSON data files do not contain English flavor text. I searched thoroughly and compared various different types of JSON data files, but the only flavor text present was for non-English versions of cards.
 3. MTGJSON stores a card's first printing information as the name of the set it was part of, not a particular date. Making the dataset easily readable would have required manually converting set codes into dates, which was beyond the scope of what I desired. (For mainline sets this wouldn't have been too much trouble, but the recent explosion in secondary products, alternate printings, and limited time FOMO sales has complicated matters.)
 
@@ -79,6 +79,6 @@ The game's sensibilities have also changed in no small ways: while a big dude li
 - Create some way to analyze the color identity of an input word.
 - Use art tags on [Scryfall](https://tagger.scryfall.com/) to identify the prevalance of characters from one set to another.
 - Unify noun/adjective forms of namewords (`elf`/`elvish`) and combine close synonyms (`dark`/`darkness`).
-- Prevent character names from being cleaned into namewords (`Bolas's Citadel` is not `Bola` + `Bitadel`).
+- Prevent character names from being cleaned into namewords (`Bolas's Citadel` is not `Bola` + `Citadel`).
 - Graph popularity of certain namewords/creature types/characters over time.
 - Create higher quality graphics and visualizations overall.
