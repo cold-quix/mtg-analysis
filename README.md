@@ -1,5 +1,5 @@
 # MTG Power Words
-A look at Magic: the Gathering cards using machine learning to analyze and predict words used in names, creature types, etc.
+A look at Magic: the Gathering cards using machine learning to analyze words in names and creature types.
 
 ## Context
 Magic: the Gathering is a trading card game where players use land cards (Plains, Island, Swamp, Mountain, Forest) to generate mana in one of five colors (white, blue, black, red, green) to cast spells in those colors. Each color has different mechanical characteristics and is associated with particular types of cards: most Elf cards are green, and almost all Angel cards are white.
