@@ -19,7 +19,7 @@ I was able to fix the first issue through trial and error, and assistance from m
 
 
 ## Methodology
-The work is all done in main.ipynb, reading data from a JSON file in `/data` to create dataframes and then using pandas and string manipulation to make the data clean. The 100 most common words were isolated, then graphs are generated with matplotlib and saved manually to `/output`.
+The work is all done in main.ipynb, reading data from a JSON file in `/data` to create dataframes and then using pandas and string manipulation to make the data clean. The 100 most common words are isolated, then graphs are generated with matplotlib and saved manually to `/output`.
 
 I had wanted to have a card's color (the mana required to play it) and its color identity (any secondary mana symbols that appear in its text box) to be considered as primary and secondary characteristics, but that was beyond my abilities at the time. Currently the data set uses a very quick and dirty solution: any card with a multicolored identity is copied across all of its colors - not an ideal solution, but it does allow for cards with differently-colored abilities to be counted.
 
